@@ -1,0 +1,31 @@
+# ESP-IDF
+esp32/build/
+esp32/managed_components/
+esp32/.vscode/
+esp32/dependencies.lock
+sdkconfig.old
+
+# STM32CubeIDE
+stm32/Debug/
+stm32/Release/
+stm32/*.elf
+stm32/*.bin
+stm32/*.hex
+stm32/*.map
+stm32/.settings/
+
+# Python
+linux/__pycache__/
+linux/*.pyc
+linux/.env
+linux/venv/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
