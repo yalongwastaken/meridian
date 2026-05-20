@@ -111,16 +111,16 @@ Each phase is scoped to a single weekend session.
 ## Repository Structure
 
 ```
-vibration-monitor/
+meridian/
 ├── stm32/
-│   ├── Core/
-│   │   ├── Src/
+│   ├── core/
+│   │   ├── src/
 │   │   │   ├── main.c              # Entry, peripheral init
 │   │   │   ├── accel.c             # SPI+DMA driver for ADXL345
 │   │   │   ├── fft.c               # CMSIS-DSP FFT wrapper
 │   │   │   └── packet.c            # Struct serialization + UART TX
-│   │   └── Inc/
-│   ├── Drivers/                    # STM32 HAL + CMSIS-DSP
+│   │   └── inc/
+│   ├── drivers/                    # STM32 HAL + CMSIS-DSP
 │   └── STM32F103C8TX_FLASH.ld
 ├── esp32/
 │   ├── main/
