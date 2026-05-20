@@ -3,6 +3,7 @@ esp32/build/
 esp32/managed_components/
 esp32/.vscode/
 esp32/dependencies.lock
+sdkconfig
 sdkconfig.old
 
 # STM32CubeIDE
