@@ -123,13 +123,22 @@ meridian/
 │   ├── drivers/                    # STM32 HAL + CMSIS-DSP
 │   └── STM32F103C8TX_FLASH.ld
 ├── esp32/
+│   ├── components/
+│   │   ├── mqtt_pub/
+│   │   │   ├── CMakeLists.txt
+│   │   │   ├── mqtt_pub.c          # WiFi connect + MQTT publish task
+│   │   │   └── mqtt_pub.h
+│   │   ├── sleep/
+│   │   │   ├── CMakeLists.txt
+│   │   │   ├── sleep.c             # Light sleep management
+│   │   │   └── sleep.h
+│   │   └── uart_rx/
+│   │       ├── CMakeLists.txt
+│   │       ├── uart_rx.c           # UART receive task + queue
+│   │       └── uart_rx.h
 │   ├── main/
-│   │   ├── main.c                  # FreeRTOS task init
-│   │   ├── uart_rx.c               # UART receive task + queue
-│   │   ├── mqtt_pub.c              # WiFi connect + MQTT publish task
-│   │   └── sleep.c                 # Light sleep management
-│   ├── CMakeLists.txt
-│   └── sdkconfig
+│   │   └── main.c
+│   └── CMakeLists.txt
 ├── linux/
 │   ├── broker/
 │   │   └── mosquitto.conf
