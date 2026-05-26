@@ -1,7 +1,5 @@
 # ESP-IDF
-esp32/build/
-esp32/managed_components/
-esp32/dependencies.lock
+**/build/
 sdkconfig
 sdkconfig.old
 
