@@ -1,6 +1,8 @@
 /**
  * @file uart_rx.c
- * @brief 
+ * @brief Event-driven UART receive component for Meridian ESP32 node.
+ *        Initializes the ESP-IDF UART driver, blocks on hardware events,
+ *        and forwards parsed sensor data onto the shared sensor queue.
  */
 
 #include <string.h>

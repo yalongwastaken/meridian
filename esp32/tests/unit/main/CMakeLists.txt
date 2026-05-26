@@ -1,8 +1,7 @@
 idf_component_register(
-    SRCS "main.c"
+    SRCS "test_uart_rx.c"
     INCLUDE_DIRS "."
     REQUIRES
-        mqtt_pub
-        sleep
         uart_rx
+        unity
 )
